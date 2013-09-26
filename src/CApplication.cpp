@@ -3,24 +3,19 @@
 
 #include "CApplication.h"
 #include "CControl.h"
+#include "COutput.h"
 
 // -------------------------------------------------------------------------
 // main
 int main(int argc, char* argv[])
 {
 	CControl* Control = new CControl();
+	COutput* Output   = new COutput();
 
-	if(argc != 2)
-	{
-		fprintf(stderr,"No Portnumber given\n");
-		exit(1);
-	}
-
-	int Port = atoi(argv[1]);
-
-	Control->Run(Port);
+	Control->Run(Output);
 
 	delete Control;
+	delete Output;
 
 	return 0;
 }

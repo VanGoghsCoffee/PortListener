@@ -4,7 +4,14 @@
 
 class COutput
 {
+	public:
+		void ErrNoPortNumber();
 
+	public:
+		void MenuOptions();
+		void ListenerStarted();
+		void ConnectToPort();
+		void Connecting(int _Port);
 };
 
 #endif /* __PORTLISTENER_COUTPUT_H */
