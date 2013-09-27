@@ -16,9 +16,14 @@ void CControl::Run(COutput* _Output)
 			case 1:
 				_Output->ConnectToPort();
 				SetPort();
-				_Output->Connecting(m_Port);
+				_Output->Listening(m_Port);
 				RunListener(_Output);
 				break;
+
+			case 2:
+			
+				break;
+
 
 			case 3:
 				break;

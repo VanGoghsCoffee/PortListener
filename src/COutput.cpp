@@ -36,14 +36,13 @@ void COutput::ListenerStarted()
 // ConnectToPort
 void COutput::ConnectToPort()
 {	
-	std::cout << "Start Listener" 			<< std::endl;
 	std::cout << "Enter port number..." 	<< std::endl;
 }
 // -------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------
 // ConnectToPort
-void COutput::Connecting(int _Port)
+void COutput::Listening(int _Port)
 {	
 	std::cout << "Listening on port: " << _Port << std::endl;
 }
